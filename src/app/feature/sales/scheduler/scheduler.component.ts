@@ -82,6 +82,7 @@ export class SchedulerComponent implements OnInit {
 
     if(this.platform.is('mobile')) {
       this.localNotifications.schedule({
+	id: Math.floor(Math.random()*90000) + 10000,
         text: this.schedulerForm['controls']['title'].value,
         trigger: {at: new Date(new Date().getTime() + timeToTriggerNotification)},
         led: 'FF0000',
@@ -91,5 +92,7 @@ export class SchedulerComponent implements OnInit {
     console.log(this.platform.is('mobile'));
     console.log(this.platform.is('desktop'));
   }
+
+
 
 }
