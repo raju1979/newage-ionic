@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Scheduler</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <div>
+      <h3>Welcome {{user.name}}</h3>
+    </div>
+    <ion-text color="primary">
+      <p>
+        Please select Date and Time and enter a title to schedule notification.
+      </p>
+    </ion-text>
+    <form [formGroup]="schedulerForm" novalidate>
+      <ion-item class="ion-margin-bottom">
+        <ion-label>MM DD YY</ion-label>
+        <ion-datetime displayFormat="MM DD YY" placeholder="Select Date" [min]="minDate"
+          (ionChange)="getScheduleDate($event)" ></ion-datetime>
+          <input type="hidden" formControlName="scheduleDate">
+      </ion-item>
+      <ion-item class="ion-margin-bottom">
+        <ion-label>Start Time</ion-label>
+        <ion-datetime display-format="HH:mm" picker-format="HH:mm" (ionChange)="getScheduleTime($event)"></ion-datetime>
+        <input type="hidden" formControlName="scheduleTime">
+      </ion-item>
+      <ion-item>
+        <ion-label>Title</ion-label>
+        <ion-input type="text" formControlName="title"></ion-input>
+      </ion-item>
+      <div class="ion-margin-top">
+        <ion-button expand="full" (click)="submit()">Schedule Notification</ion-button>
+      </div>
+    </form>
+  </div> 
+</ion-content>

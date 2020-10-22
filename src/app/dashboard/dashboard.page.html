@@ -1,0 +1,143 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center" text-center>Dashboard</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="cog-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="outerContainer" class="ion-padding">
+    <div id="welcome-container" class="ion-padding rounded">
+      <ion-row>
+        <ion-col class="d-flex ion-align-items-center">
+          <div class="inline-block">
+            <img [src]="'assets/img/gauge.png'"/>
+            <ion-text color="light">
+              <p class="ion-text-center ion-no-margin">Target Acheived</p>
+            </ion-text>
+          </div>
+        </ion-col>
+        <ion-col class="d-flex ion-align-items-center ion-justify-content-evenly flex-column">
+          <ion-text color="light">
+            <p class="vw_4 ion-no-padding ion-no-margin ion-text-center">Welcome</p>
+            <p class="vw_4 ion-no-padding ion-no-margin ion-text-center">Rajesh Dhoundiyal</p>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+    </div>
+    <div class="ion-margin-top bordered ion-padding">
+      <ion-row class="ion-justify-content-evenly">
+        <ion-col size="11">
+          <ion-text>
+            <h3 class="ion-no-padding ion-no-margin">Upcoming appointment</h3>
+          </ion-text>
+        </ion-col>
+        <ion-col size="1"  class="ion-text-right">
+          <div>
+            <ion-icon name="calendar-outline" class="rem-1_5"></ion-icon>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-evenly ion-margin-top">
+        <ion-col size="10">
+          <ion-text>
+            <h3 class="ion-no-padding ion-no-margin">Xerox</h3>
+          </ion-text>
+        </ion-col>
+        <ion-col size="2" class="ion-text-right">
+          <div class="priorityContainer">
+            <span class="ion-margin-end">High</span>
+            <ion-text color="danger">
+              <ion-icon name="arrow-up-outline" class="rem-1_5"></ion-icon>
+            </ion-text>            
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-margin-top">
+        <ion-col size="6">
+          <ion-text>
+            <p class="ion-no-padding ion-no-margin card-text"><span class='bold'>Name:</span> Kumar</p>
+          </ion-text>
+        </ion-col>
+        <ion-col size="6" class="ion-text-right">
+          <ion-text>
+            <p class="ion-no-padding ion-no-margin card-text"><span class='bold'>contact:</span> +9195999999</p>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-margin-top">
+        <ion-col size="6">
+          <ion-text>
+            <p class="ion-no-padding ion-no-margin card-text"><span class='bold'>Designation:</span> Manager</p>
+          </ion-text>
+        </ion-col>
+        <ion-col size="6" class="ion-text-right">
+          <ion-text>
+            <p class="ion-no-padding ion-no-margin card-text"><span class='bold'>email:</span> dhrajesh1@gmail.com</p>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-margin-top">
+        <ion-col size="10">
+          <ion-text>
+            <p class="ion-no-padding ion-no-margin card-text"><span class='bold'>Followup Details:</span> 15Sep2020</p>
+          </ion-text>
+        </ion-col>
+        <ion-col size="2" class="ion-text-right">          
+        </ion-col>
+      </ion-row>
+    </div>
+    <ion-row class="ion-margin-top ion-no-padding">
+      <ion-col>
+        <div class="numbers-container ion-padding rounded">
+          <ion-text color="light">
+            <h3 class="rem-1_5">32</h3>
+          </ion-text>
+          <ion-text color="light">
+            <h3 class="vw_4">Pending Folloups</h3>
+          </ion-text>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="numbers-container ion-padding rounded">
+          <ion-text color="light">
+            <h3 class="rem-1_5">24</h3>
+          </ion-text>
+          <ion-text color="light">
+            <h3 class="vw_4">Pending Enquiry</h3>
+          </ion-text>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-margin-top ion-no-padding">
+      <ion-col>
+        <div class="numbers-container ion-padding rounded">
+          <ion-text color="light">
+            <h3 class="rem-1_5">32</h3>
+          </ion-text>
+          <ion-text color="light">
+            <h3 class="vw_4">Pending Folloups</h3>
+          </ion-text>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="numbers-container ion-padding rounded">
+          <ion-text color="light">
+            <h3 class="rem-1_5">24</h3>
+          </ion-text>
+          <ion-text color="light">
+            <h3 class="vw_4">Pending Enquiry</h3>
+          </ion-text>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
